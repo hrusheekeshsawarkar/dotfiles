@@ -1,0 +1,10 @@
+[34m2025-09-30 11:06:30[39m [33mAdded selected_avatar_id column to interviews table[39m
+[34m2025-09-30 11:06:30[39m [33mCreated index on interviews.selected_avatar_id[39m
+[34m2025-10-05 14:44:58[39m Executing: -- Migration: Add JD-CV Matching table
+[34m2025-10-05 14:44:58[39m [32mResult: Completed in 11ms[39m
+[34m2025-10-05 14:45:27[39m [33mAdded selected_avatar_id column to interviews table[39m
+[34m2025-10-05 14:45:27[39m [33mCreated index on interviews.selected_avatar_id[39m
+[34m2025-10-05 14:45:56[39m [33mColumn selected_avatar_id already exists in interviews table[39m
+[34m2025-10-05 14:46:17[39m Executing: CREATE TABLE IF NOT EXISTS jd_cv_matching (     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),     organization_id VARCHAR(255) NOT NULL,     company_name VARCHAR(255) DEFAULT '',     department VARCHAR(255) DEFAULT '',     designation VARCHAR(255) DEFAULT '',     industry VARCHAR(255) DEFAULT '',     role VARCHAR(255) DEFAULT '',     level VARCHAR(255) DEFAULT '',     job_description TEXT DEFAULT '',     job_description_file VARCHAR(500) DEFAULT '',     cultural_fit TEXT DEFAULT '',     cultural_fit_file VARCHAR(500) DEFAULT '',     include_additional_parameters BOOLEAN DEFAULT false,     parameter_categories JSONB NOT NULL DEFAULT '[]'::jsonb,     language VARCHAR(50) DEFAULT 'english',     voice_id VARCHAR(255) DEFAULT '',     duration VARCHAR(10) DEFAULT '30',     status VARCHAR(50) DEFAULT 'active',     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP )
+[34m2025-10-05 14:46:17[39m [32mResult: Completed in 14ms[39m
+

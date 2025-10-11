@@ -1,0 +1,3 @@
+/Users/hrusheekeshsawarkar/miniconda3
+/Users/hrusheekeshsawarkar/miniconda3/envs/f5tts
+/Users/hrusheekeshsawarkar/miniconda3/envs/fitness

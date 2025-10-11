@@ -1,0 +1,16 @@
+{
+    "keepSettings": {
+        "type": 1,
+        "amount": 7
+    },
+    "auditFilename": "/Users/hrusheekeshsawarkar/.redis-insight/logs/.55cd31de1fc63cdf99941477e8e59af1851bcb7f-audit.json",
+    "hashType": "sha256",
+    "extension": "",
+    "files": [
+        {
+            "date": 1757611709807,
+            "name": "/Users/hrusheekeshsawarkar/.redis-insight/logs/redisinsight-errors-2025-09-11.log.0",
+            "hash": "e4ca668356c0510bae8798c48b76e25d21265db6274985ac6a7300b33658e3bf"
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "1755435940712/sainterview#sainterview#foreignKey": [
+        {
+            "constraint_name": "interview_questions_interview_id_fkey",
+            "table_schema": "public",
+            "table_name": "interview_questions",
+            "column_name": "interview_id",
+            "referenced_table": "interviews",
+            "referenced_column": "id",
+            "updateRule": "a",
+            "deleteRule": "c"
+        },
+        {
+            "constraint_name": "fk_attendee_responses_attendee",
+            "table_schema": "public",
+            "table_name": "attendee_responses",
+            "column_name": "attendee_id",
+            "referenced_table": "attendees",
+            "referenced_column": "id",
+            "updateRule": "a",
+            "deleteRule": "c"
+        },
+        {
+            "constraint_name": "fk_attendee_responses_interview",
+            "table_schema": "public",
+            "table_name": "attendee_responses",
+            "column_name": "interview_id",
+            "referenced_table": "interviews",
+            "referenced_column": "id",
+            "updateRule": "a",
+            "deleteRule": "c"
+        },
+        {
+            "constraint_name": "fk_attendee_responses_question",
+            "table_schema": "public",
+            "table_name": "attendee_responses",
+            "column_name": "question_id",
+            "referenced_table": "interview_questions",
+            "referenced_column": "id",
+            "updateRule": "a",
+            "deleteRule": "c"
+        }
+    ],
+    "1755435940712/postgres#postgres#foreignKey": []
+}
